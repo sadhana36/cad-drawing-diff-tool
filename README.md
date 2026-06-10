@@ -1,55 +1,41 @@
-# CAD Blueprint Comparison Tool
+##CAD Blueprint Comparison Tool
 
-## Overview
-
+##Overview
 This project is a CAD drawing comparison tool designed to detect structural differences between two engineering drawings.
-
 It was inspired by real-world exposure to building system layouts during my internship at L&T.
 
-## Problem
-
+##Problem
 Pixel-based comparison methods fail for CAD drawings due to:
-
 * alignment issues
 * repetitive patterns (grids, symbols)
 * differences in drawing styles
 
-## Approach
+##Approach
+The project explores moving beyond image-based comparison toward structure-aware analysis of CAD data.
 
-The project pivots from image comparison to **geometry-level analysis** using DXF files.
+##Key idea:
+Instead of comparing raw pixels, the focus is on understanding and comparing the underlying structure of drawings.
 
-Key idea:
-
-* The approach shifts from raster comparison to vector-level analysis, where CAD entities (lines, arcs, polylines) are extracted and compared structurally.
-
-## Current Progress
-
+##Current Progress
 * Image-based comparison using OpenCV (initial approach)
 * Identified limitations with alignment and accuracy
-* Transitioning to DXF-based comparison using `ezdxf`
+* Exploring more robust approaches for structure-level comparison
+* Planned Features
+* Layer-aware comparison
+* Detection of added / removed / modified elements
+*Visualization of structural differences
 
-## Planned Features
-
-* Layer-by-layer comparison
-* Detection of added / removed / modified entities
-* Visualization of differences
-
-## Tech Stack
-
+##Tech Stack
 * Python
 * OpenCV
-* ezdxf
 
-## Status
+##Status
+Actively developing — evolving from image-based comparison toward more robust structural analysis approaches
 
-Actively developing — transitioning from image-based comparison to DXF-based structural analysis
+##Limitations
+* Current implementation does not handle rotated or scaled drawings
+* Matching logic is still basic and not tolerance-aware
+* Complex structures are not fully supported yet
 
-## Limitations
-
-- Current implementation does not handle rotated or scaled drawings
-- Entity matching is basic and not tolerance-aware yet
-- Complex blocks and nested structures are not fully supported
-
-## Author
-
+##Author
 ~Sadhana K
