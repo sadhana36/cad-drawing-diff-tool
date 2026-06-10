@@ -42,7 +42,13 @@ Key idea:
 
 ## Status
 
-Work in progress — currently building DXF parsing and comparison pipeline.
+Actively developing — transitioning from image-based comparison to DXF-based structural analysis
+
+## Limitations
+
+- Current implementation does not handle rotated or scaled drawings
+- Entity matching is basic and not tolerance-aware yet
+- Complex blocks and nested structures are not fully supported
 
 ## Author
 
