@@ -20,7 +20,7 @@ The project pivots from image comparison to **geometry-level analysis** using DX
 
 Key idea:
 
-* Compare actual entities (lines, shapes) instead of pixels
+* The approach shifts from raster comparison to vector-level analysis, where CAD entities (lines, arcs, polylines) are extracted and compared structurally.
 
 ## Current Progress
 
