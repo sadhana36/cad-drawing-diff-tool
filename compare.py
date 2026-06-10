@@ -2,8 +2,9 @@ import cv2
 import numpy as np
 
 # Load images
-img1 = cv2.imread('I1B1.png')
-img2 = cv2.imread('I2B1.png')
+img1 = cv2.imread('input1.png')
+img2 = cv2.imread('var1.png')
+#img3=cv2.imread('var2.png')
 
 # Check if images loaded
 if img1 is None or img2 is None:
